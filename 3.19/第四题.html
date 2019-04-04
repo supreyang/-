@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+           list-style: none;
+        }
+        li{
+            float: left;
+            width: 30px;
+            line-height: 30px;
+            border:  1px solid red;
+        }
+        span{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="1.jpg" alt="">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <script>
+        var img =document.getElementsByTagName('img')[0];
+        var ali =document.getElementsByTagName('li')[0];
+        ali.onclick=function(){
+            img.src="2.jpg"
+        }
+        var img1 =document.getElementsByTagName('img')[0];
+        var ali =document.getElementsByTagName('li')[1];
+        ali.onclick=function(){
+            img.src="3.jpg"
+        }
+        var img =document.getElementsByTagName('img')[0];
+        var ali =document.getElementsByTagName('li')[2];
+        ali.onclick=function(){
+            img.src="4.jpg"
+        }
+        var img =document.getElementsByTagName('img')[0];
+        var ali =document.getElementsByTagName('li')[3];
+        ali.onclick=function(){
+            img.src="5.jpg"
+        }
+        var img =document.getElementsByTagName('img')[0];
+        var ali =document.getElementsByTagName('li')[4];
+        ali.onclick=function(){
+            img.src="6.jpg"
+        }
+        var img =document.getElementsByTagName("img")[0];
+        var ali =document.getElementsByTagName("li")[5];
+        ali.onclick=function(){
+            img.src="7.jpg"
+        }
+    </script>
+</body>
+</html>

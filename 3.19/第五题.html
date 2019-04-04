@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .del{
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <input type="text" placeholder="添加水果名字">
+        <button>添加</button>
+        <ul>
+            <li> <span>香蕉</span> <span class="del" > 删除</span> </li>
+            <li> <span>苹果</span> <span class="del" > 删除</span> </li>
+            <li> <span>鸭梨</span> <span class="del" > 删除</span> </li>
+        </ul>
+    <script>
+        var aDel = document.querySelectorAll(".del");
+		for(var i = 0;i<aDel.length;i++){
+			aDel[i].onclick = function(){
+				var parent = this.parentNode
+				parent.parentNode.removeChild(parent)
+            }
+        }
+    </script>
+    <script>
+        var btn = document.querySelector("button");
+        var ul = document.querySelector("ul");
+        var input=document.querySelectorAll("input");
+		btn.onclick = function(){
+			var li = document.createElement("li"); 
+			li.innerHTML = input.value+("删除");
+			ul.appendChild(li);
+		}
+    </script>
+</body>
+</html>

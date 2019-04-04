@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue.js" ></script>
+    <style>
+        img{
+            width: 391px;
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <img :src="aaa">
+    <button @click="yi" >1</button>
+    <button @click="er" >2</button>
+    <button @click="san" >3</button>
+    </div>
+    <script>
+        let vm = new Vue({
+            el:"#app",
+            data:{
+                aaa:"1.jpg"
+                },
+            methods:{
+
+                yi:function(){
+                    this.aaa = "2.jpg"
+                },
+                er:function(){
+                    this.aaa = "3.jpg"
+                },
+                san:function(){
+                    this.aaa = "1.jpg"
+                }
+            }
+        })
+    </script>
+</body>
+</html>
